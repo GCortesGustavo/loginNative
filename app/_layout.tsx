@@ -3,15 +3,14 @@ import { useEffect, useState } from 'react';
 import { useAuthStore } from '../store/auth';
 
 export default function AppLayout() {
-  const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
-  const hasHydrated = useAuthStore((state) => state.hasHydrated)
+  const { isAuthenticated, hasHydrated} = useAuthStore()
   const router = useRouter();
   const segments = useSegments();
 
   const [hasNavigated, setHasNavigated] = useState(false)
 
   useEffect(() => {
-    if (!hasHydrated || !segments.length || hasNavigated) return
+    if (!hasHydrated || hasNavigated || !segments.length ) return
 
     const inAuthGroup = segments[0] !== '(tabs)';
 
@@ -20,8 +19,9 @@ export default function AppLayout() {
       setHasNavigated(true)
     } else if (isAuthenticated && inAuthGroup) {
       router.replace('/(tabs)');
-      setHasNavigated(true)
     }
+
+    setHasNavigated(true);
   }, [hasHydrated, isAuthenticated, segments, router, hasNavigated]);
 
   // if (!hasHydrated || !segments.length) {
