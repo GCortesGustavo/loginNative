@@ -34,12 +34,33 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="reservas"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: "Reservas",
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="calendar" color={color} />,
         }}
       />
+      <Tabs.Screen
+        name="perfil"
+        options={{
+          title: 'Perfil',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="person.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="ayuda"
+        options={{
+          title: "Ayuda",
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="questionmark.circle" color={color} />,
+        }}
+      />
+      {/* <Tabs.Screen
+        name="mas"
+        options={{
+          title: "Más",
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="line.horizontal.3" color={color} />,
+        }}
+      /> */}
     </Tabs>
   );
 }
