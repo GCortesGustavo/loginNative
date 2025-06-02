@@ -66,6 +66,57 @@ const styles = StyleSheet.create({
         color: "#fff",
         fontWeight: "600",
     },
+    /* ReservaStep3 */
+    title: {
+        fontSize: 18,
+        fontWeight: '600',
+        marginBottom: 16,
+    },
+    nombre: {
+        fontWeight: '600',
+        fontSize: 16,
+    },
+    info: {
+        color: '#555',
+        marginTop: 4,
+    },
+    precio: {
+        marginTop: 8,
+        fontWeight: 'bold',
+        color: '#4CAF50',
+    },
+    seleccionado: {
+        marginTop: 8,
+        fontSize: 12,
+        color: '#4CAF50',
+        fontWeight: 'bold',
+    },
+    resumen: {
+        marginTop: 24,
+        padding: 16,
+        backgroundColor: '#f3f3f3',
+        borderRadius: 8,
+    },
+    resumenTitle: {
+        fontWeight: 'bold',
+        marginBottom: 4,
+    },
+    boton: {
+        marginTop: 24,
+        backgroundColor: '#4CAF50',
+        paddingVertical: 14,
+        borderRadius: 8,
+        alignItems: 'center',
+    },
+    botonText: {
+        color: 'white',
+        fontWeight: '600',
+        fontSize: 16,
+    },
+    total: {
+        marginTop: 24,
+        alignItems: 'center',
+    },
 })
 
 export default styles
