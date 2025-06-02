@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginRight: 8,
   },
-  button: {
+  buttonLogOut: {
     backgroundColor: '#E53935',
     paddingVertical: 6,
     paddingHorizontal: 12,
@@ -23,24 +23,6 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
     fontWeight: 'bold',
-  },
-  proximaReserva: {
-    backgroundColor: '#ECFDF5',
-    borderColor: '#4CC978',
-    borderWidth: 1,
-    borderRadius: 12,
-    padding: 16,
-    marginBottom: 16,
-  },
-  proximaReservaTitle: {
-    color: '#059669',
-    fontWeight: 'bold',
-    fontSize: 16,
-    marginBottom: 8,
-  },
-  proximaReservaText: {
-    color: '#374151',
-    fontSize: 14,
   },
   switchContainer: {
     flexDirection: 'row',
@@ -65,12 +47,13 @@ const styles = StyleSheet.create({
     color: '#020817',
   },
   autoDescription: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     justifyContent: 'space-between',
     borderWidth: 1,
     borderColor: '#4CC978',
     borderRadius: 12,
-    padding: 12,
+    paddingTop: 12,
+    paddingBottom: 0,
     marginBottom: 12,
     backgroundColor: '#fff',
     shadowColor: '#000',
@@ -81,6 +64,17 @@ const styles = StyleSheet.create({
   },
   carInfo: {
     flex: 1,
+    flexDirection: 'row'
+  },
+  carIcon: {
+    borderWidth: 1,
+    borderColor: '#4CC978',
+    borderRadius: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 64,
+    marginLeft: 8,
+    marginRight: 8 
   },
   carTitle: {
     fontWeight: 'bold',
@@ -102,19 +96,28 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
   },
   carAction: {
+    flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'flex-end',
+    alignItems: 'center',
+    backgroundColor: '#D1F9E1',
+    marginTop: 8,
+    height: 60,
   },
   lastWashText: {
     fontSize: 12,
     color: '#4B5563',
     marginBottom: 4,
+    marginLeft: 8,
   },
   reserveButton: {
     backgroundColor: '#4CC978',
-    paddingHorizontal: 12,
-    paddingVertical: 6,
+    marginBottom: 4,
+    marginRight: 8,
     borderRadius: 8,
+    width: 80,
+    height: 32,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   reserveText: {
     color: 'white',
@@ -128,6 +131,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 12,
     marginBottom: 8,
+    flexDirection: 'row',
+    justifyContent: 'center'
   },
   addCarText: {
     color: '#4CC978',
@@ -188,6 +193,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
+    backgroundColor: '#D1F9E1'
   },
   availableTag: {
     backgroundColor: '#D1FADF',

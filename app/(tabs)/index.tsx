@@ -1,15 +1,27 @@
 import Header from '@/components/Header';
+import ProximaReserva from '@/components/ProximaReserva';
+import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import React, { useState } from 'react';
 import {
-  Image,
   ScrollView,
   Text,
   TouchableOpacity,
-  View,
+  View
 } from 'react-native';
 import { useAuthStore } from '../../store/auth';
 import styles from '../../styles/stylesHome';
+
+const vehicles = [
+    {id: '1', name: 'Honda Civic', description: '2020 - Sedan'},
+    {id: '2', name: 'Hyundai Creta', description: '2022 - SUV'},
+]
+
+const lavados = [
+    {id: '1', name: 'Lavado Básico', description: 'Lavado exterior y aseo rápido básico', price: '$12.000 CLP'},
+    {id: '2', name: 'Lavado Completo', description: 'Exterior, interior y aspirado completo', price: '$19.000 CLP'},
+]
+
 
 export default function HomeScreen() {
   const logout = useAuthStore((state) => state.logout);
@@ -28,19 +40,12 @@ export default function HomeScreen() {
         <View style={styles.container}>
           {/* Header */}
 
-          <TouchableOpacity style={styles.button} onPress={handleLogout}>
+          <TouchableOpacity style={styles.buttonLogOut} onPress={handleLogout}>
             <Text style={styles.buttonText}>Cerrar Sesión</Text>
           </TouchableOpacity>
 
           {/* Proxima Reserva */}
-          <View style={styles.proximaReserva}>
-            <Text style={styles.proximaReservaTitle}>Próxima Reserva</Text>
-            <View style={{ marginTop: 8 }}>
-              <Image style={styles.logoPlaceholder}/>
-              <Text  style={styles.proximaReservaText}>Viernes 21 de Mayo, 2025</Text>
-              <Text  style={styles.proximaReservaText}>15:00hs - 16:30hs - Lavado Completo</Text>
-            </View>
-          </View>
+          <ProximaReserva />
 
           {/* Buton Switch */}
           <View style={styles.switchContainer}>
@@ -65,87 +70,63 @@ export default function HomeScreen() {
 
           {mode === 'vehiculos' ? (
             <>
-              <View style={styles.autoDescription}>
-                <View style={styles.carInfo}>
-                  <Image style={styles.logoPlaceholder}/>
-                  <Text style={styles.carTitle}>Honda Civic</Text>
-                  <Text style={styles.carSubtitle}>2020 - Sedan</Text>
-                  <Text style={styles.tag}>Vehículo Principal</Text>
-                </View>
-                <View style={styles.carAction}>
-                  <Text style={styles.lastWashText}>Ultimo Lavado: 15 Días atrás</Text>
-                  <Text style={styles.lastWashText}>¿Tiempo para un lavado?</Text>
-                  <TouchableOpacity style={styles.reserveButton}>
-                    <Text style={styles.reserveText}>Reservar</Text>
-                  </TouchableOpacity>
-                </View>
-              </View>
-              <View style={styles.autoDescription}>
-                  <View style={styles.carInfo}>
-                    <Image style={styles.logoPlaceholder}/>
-                    <Text style={styles.carTitle}>Toyota RAV4</Text>
-                    <Text style={styles.carSubtitle}>2022 - SUV</Text>
-                    <Text style={styles.tag}>Vehículo Secundario</Text>
+              {vehicles.map((vehicle) => (
+                  <View style={styles.autoDescription} key={vehicle.id}>
+                    <View style={styles.carInfo} >
+                      <View style={styles.carIcon}>
+                        <Ionicons name='car-outline' size={40} color='#4CC978'/>
+                      </View>
+                      <View>
+                        <Text style={styles.carTitle}>Honda Civic</Text>
+                        <Text style={styles.carSubtitle}>2020 - Sedan</Text>
+                        <Text style={styles.tag}>Vehículo Principal</Text>
+                      </View>
+                    </View>
+                    <View style={styles.carAction}>
+                      <View>
+                        <Text style={styles.lastWashText}>Ultimo Lavado: 15 Días atrás</Text>
+                        <Text style={styles.lastWashText}>¿Tiempo para un lavado?</Text>  
+                      </View>
+                      <TouchableOpacity style={styles.reserveButton} onPress={() => router.replace('/reservas')}>
+                        <Text style={styles.reserveText}>Reservar</Text>
+                      </TouchableOpacity>
+                    </View>
                   </View>
-                <View style={styles.carAction}>
-                  <Text style={styles.lastWashText}>Ultimo Lavado: 1 Mes atrás</Text>
-                  <Text style={styles.lastWashText}>¿Tiempo para un lavado?</Text>
-                  <TouchableOpacity style={styles.reserveButton}>
-                    <Text style={styles.reserveText}>Reservar</Text>
-                  </TouchableOpacity>
-                </View>
-              </View>
+              ))}
             </>
           ) : (
             <>
-              <View style={styles.recomendadoCard}>
-                <View style={styles.recomendadoTop}>
-                  <View style={{ flex: 1 }}>
-                    <Text style={styles.serviceTitle}>Lavado Básico</Text>
-                    <Text style={styles.serviceDescription}>
-                      Lavado exterior y aseo rápido básico
-                    </Text>
-                    <Text style={styles.durationText}>🕒 Duración: 45 min</Text>
+              {lavados.map((lavado) => (
+                <View style={styles.recomendadoCard} key={lavado.id}>
+                  <View style={styles.recomendadoTop}>
+                    <View style={{ flex: 1 }}>
+                      <Text style={styles.serviceTitle}>{lavado.name}</Text>
+                      <Text style={styles.serviceDescription}>
+                        {lavado.description}
+                      </Text>
+                      <Text style={styles.durationText}>🕒 Duración: 45 min</Text>
+                    </View>
+                    <Text style={styles.priceText}>{lavado.price}</Text>
                   </View>
-                  <Text style={styles.priceText}>$12.000 CLP</Text>
-                </View>
 
-                <View style={styles.cardFooter}>
-                  <Text style={styles.availableTag}>Disponible Hoy</Text>
-                  <TouchableOpacity style={styles.reserveButton}>
-                    <Text style={styles.reserveText}>Reservar</Text>
-                  </TouchableOpacity>
-                </View>
-              </View>
-
-              <View style={styles.recomendadoCard}>
-                <View style={styles.recomendadoTop}>
-                  <View style={{ flex: 1 }}>
-                    <Text style={styles.serviceTitle}>Lavado Completo</Text>
-                    <Text style={styles.serviceDescription}>
-                      Exterior, interior y aspirado completo
-                    </Text>
-                    <Text style={styles.durationText}>🕒 Duración: 1h 30min</Text>
+                  <View style={styles.cardFooter}>
+                    <Text style={styles.availableTag}>Disponible Hoy</Text>
+                    <TouchableOpacity style={styles.reserveButton} onPress={() => router.replace('/reservas')}>
+                      <Text style={styles.reserveText}>Reservar</Text>
+                    </TouchableOpacity>
                   </View>
-                  <Text style={styles.priceText}>$18.000 CLP</Text>
                 </View>
-
-                <View style={styles.cardFooter}>
-                  <Text style={styles.availableTag}>Disponible Hoy</Text>
-                  <TouchableOpacity style={styles.reserveButton}>
-                    <Text style={styles.reserveText}>Reservar</Text>
-                  </TouchableOpacity>
-                </View>
-              </View>
+              ))}
             </>
           )}
 
           {/* Botones inferiores */}
           <TouchableOpacity style={styles.addCarButton}>
+            <Ionicons name='car-outline' size={24} color='#4CC978'/>
             <Text style={styles.addCarText}>Agregar Vehículo</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.reserveNowButton}>
+          <TouchableOpacity style={styles.reserveNowButton} onPress={() => router.replace('/reservas')}>
             <Text style={styles.reserveNowText}>Reservar Ahora</Text>
           </TouchableOpacity>
         </View>
