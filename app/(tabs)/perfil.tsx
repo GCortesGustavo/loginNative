@@ -30,9 +30,12 @@ const PerfilScreen = () => {
           </View>
 
           <View style={styles.statsRow}>
-            <View style={styles.stat}>
-              <Text style={styles.statValue}>15</Text>
-              <Text style={styles.statLabel}>Puntos</Text>
+            <View style={styles.statTrophy}>
+              <Ionicons name="trophy-outline" size={24} color={'#3cb371'}/>
+              <View>
+                <Text style={styles.statValue}>15</Text>
+                <Text style={styles.statLabel}>Puntos</Text>
+              </View>
             </View>
             <View style={styles.stat}>
               <Text style={styles.statValue}>3</Text>
@@ -100,7 +103,7 @@ const PerfilScreen = () => {
           <>
             <View style={styles.vehiculosContainer}>
               <View style={styles.card}>
-                  <View style={styles.vehicleIcon} />
+                  <Ionicons name="car-outline" size={40} color={'#3cb371'}/>
                     <View style={styles.info}>
                       <Text style={styles.name1}>Honda Civic</Text>
                       <Text style={styles.subInfo}>
@@ -115,7 +118,7 @@ const PerfilScreen = () => {
                     </TouchableOpacity>
               </View>
               <View style={styles.card}>
-                  <View style={styles.vehicleIcon} />
+                  <Ionicons name="car-outline" size={40} color={'#3cb371'}/>
                     <View style={styles.info}>
                       <Text style={styles.name1}>TOYOTA RAV4</Text>
                       <Text style={styles.subInfo}>

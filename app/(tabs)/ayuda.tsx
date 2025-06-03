@@ -21,7 +21,7 @@ const AyudaScreen = () => {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
-                <MaterialIcons name='support-agent' size={24} color='white'/>
+                <MaterialIcons name='support-agent' style={{marginTop: 20}} size={24} color='white'/>
                 <Text style={styles.headerTitle}>Asistente Virtual</Text>
             </View>
 

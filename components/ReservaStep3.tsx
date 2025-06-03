@@ -30,7 +30,7 @@ const [lavadorSeleccionado, setLavadorSeleccionado] = useState<string | null>(nu
             key={lavador.id}
             onPress={() => setLavadorSeleccionado(lavador.id)}
             style={[
-                styles.card,
+                styles.cardPerson,
                 lavadorSeleccionado === lavador.id && styles.selectedCard,
             ]}
             >

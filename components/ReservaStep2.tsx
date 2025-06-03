@@ -1,4 +1,5 @@
 import styles from "@/styles/stylesReservas";
+import { Ionicons } from "@expo/vector-icons";
 import React, { useState } from "react";
 import {
     ScrollView,
@@ -65,6 +66,7 @@ export default function ReservasStep2({ onNext, onBack }: Props) {
                 setSelectedHour((prev) => (prev === hour ? null : hour))
                 }
             >
+                <Ionicons name="time-outline" size={16} />
                 <Text>{hour}</Text>
             </TouchableOpacity>
             ))}

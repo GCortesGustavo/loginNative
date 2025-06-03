@@ -6,18 +6,20 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
     },
     header: {
-        backgroundColor: '#43B97F',
+        backgroundColor: '#4CC978',
         paddingVertical: 16,
         paddingHorizontal: 16,
         flexDirection: 'row',
         alignItems: 'center',
         gap: 8,
         height: 100,
+        justifyContent: 'center'
     },
     headerTitle: {
         color: 'white',
         fontSize: 18,
         fontWeight: 'bold',
+        marginTop: 20
     },
     chatArea: {
         flex: 1,
@@ -71,9 +73,10 @@ const styles = StyleSheet.create({
         padding: 12,
         borderTopWidth: 1,
         borderColor: '#eee',
-        backgroundColor: '#fff',
+        backgroundColor: '#F1F1F1',
         alignItems: 'center',
         gap: 8,
+        marginBottom: 70
     },
     input: {
         flex: 1,

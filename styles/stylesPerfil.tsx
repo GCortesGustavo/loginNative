@@ -38,6 +38,10 @@ const styles = StyleSheet.create({
     stat: {
         alignItems: "center",
     },
+    statTrophy: {
+        flexDirection: 'row',
+        alignItems: "center",
+    },
     statValue: {
         fontWeight: "bold",
         fontSize: 16,

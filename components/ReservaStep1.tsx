@@ -1,4 +1,5 @@
 import styles from '@/styles/stylesReservas';
+import { Ionicons } from '@expo/vector-icons';
 import React, { useState } from 'react';
 import {
     ScrollView,
@@ -39,6 +40,7 @@ const ReservaStep1 = ({ onNext }: Props) => {
                         setSelectedVehicle((prev) => (prev === vehicle.id ? null : vehicle.id))
                     }
                 >
+                    <Ionicons name='car-sport-outline' size={16} />
                     <Text style={styles.cardText}>{vehicle.name}</Text>
                 </TouchableOpacity>
             ))}
@@ -58,6 +60,7 @@ const ReservaStep1 = ({ onNext }: Props) => {
                         setSelectedAddress((prev) => (prev === addr.id ? null : addr.id))
                     }
                 >
+                    <Ionicons name='location-outline' size={16} />
                     <Text style={styles.cardText}>{addr.name}</Text>
                 </TouchableOpacity>
             ))}

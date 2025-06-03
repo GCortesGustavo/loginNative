@@ -15,6 +15,8 @@ const styles = StyleSheet.create({
         padding: 12,
         borderRadius: 10,
         marginBottom: 8,
+        flexDirection: 'row',
+        alignItems: 'center'
     },
     cardSmall: {
         backgroundColor: "#F5F5F5",
@@ -23,14 +25,23 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         marginRight: 8,
         marginBottom: 8,
+        flexDirection: 'row',
+        alignItems: 'center'
     },
     selectedCard: {
         backgroundColor: "#D1FADF",
         borderColor: "#32B768",
         borderWidth: 1,
     },
+    cardPerson: {
+        backgroundColor: "#F5F5F5",
+        padding: 12,
+        borderRadius: 10,
+        marginBottom: 8,
+    },
     cardText: {
         fontSize: 14,
+        margin: 2
     },
     row: {
         flexDirection: "row",
@@ -81,7 +92,6 @@ const styles = StyleSheet.create({
         marginTop: 4,
     },
     precio: {
-        marginTop: 8,
         fontWeight: 'bold',
         color: '#4CAF50',
     },
@@ -103,7 +113,7 @@ const styles = StyleSheet.create({
     },
     boton: {
         marginTop: 24,
-        backgroundColor: '#4CAF50',
+        backgroundColor: '#4CC978',
         paddingVertical: 14,
         borderRadius: 8,
         alignItems: 'center',
@@ -117,6 +127,16 @@ const styles = StyleSheet.create({
         marginTop: 24,
         alignItems: 'center',
     },
+    cardService: {
+        backgroundColor: "#F5F5F5",
+        padding: 12,
+        borderRadius: 10,
+        marginBottom: 8,
+        flexDirection: 'row',
+        alignItems: 'center',
+        alignContent: 'center',
+        justifyContent: 'space-between'
+    },  
 })
 
 export default styles

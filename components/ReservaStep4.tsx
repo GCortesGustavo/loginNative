@@ -29,7 +29,7 @@ const ReservaStep4 = ({ onBack }: Props) => {
                     key={servicio.id}
                     onPress={() => setServicioSeleccionado(servicio.id)}
                     style={[
-                        styles.card,
+                        styles.cardService,
                         servicioSeleccionado === servicio.id && styles.selectedCard,
                     ]}
                 >
@@ -42,7 +42,7 @@ const ReservaStep4 = ({ onBack }: Props) => {
             ))}
 
             <View style={styles.total}>
-                <Text>Total a pagar: $11.389 CLP</Text>
+                <Text style={{fontWeight: 'bold'}}>Total a pagar: $11.389 CLP</Text>
             </View>
 
             <TouchableOpacity style={styles.boton}>
