@@ -1,43 +1,56 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    header: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        backgroundColor: '#4CC978',
-        borderRadius: 12,
+    headerContainer: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "flex-end",
+        backgroundColor: "#4CC978",
         padding: 16,
-        marginBottom: 16,
+        borderRadius: 8,
+        height: 140,
+        // margin: 12,
     },
     headerLeft: {
-        flexDirection: 'column',
-        alignItems: 'center',
+        flexDirection: "column",
+        flex: 1,
     },
-    headerInfo: {
-        flexDirection: 'row',
+    logoAndName: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 16,
     },
-    logoPlaceholder: {
-        width: 40,
-        height: 40,
-        backgroundColor: '#ffffff80',
-        borderRadius: 20,
-        marginRight: 8,
+    logo: {
+        width: 48,
+        height: 48,
+        borderRadius: 24,
+        backgroundColor: "#fff",
     },
-    headerText: {
-        color: 'white',
-        fontWeight: 'bold',
-        fontSize: 16,
+    businessName: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 24,
     },
-    puntosContainer: {
-        flexDirection: 'column',
-        alignItems: 'center',
+    locationRow: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 4,
+        marginTop: 2,
     },
-    puntosText: {
-        color: 'white',
-        fontWeight: '600',
-        marginLeft: 6,
+    addressText: {
+        color: "white",
+        fontSize: 14,
     },
-})
+    pointsContainer: {
+        flexDirection: "row",
+        alignItems: "center",
+        gap: 6,
+    },
+    pointsText: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 14,
+    },
+});
 
-export default styles
+export default styles;

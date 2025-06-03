@@ -1,5 +1,7 @@
 import Header from '@/components/Header';
 import ProximaReserva from '@/components/ProximaReserva';
+import stylesCars from '@/styles/home/stylesHomeCars';
+import stylesLavados from '@/styles/home/stylesHomeLavados';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 import React, { useState } from 'react';
@@ -71,21 +73,21 @@ export default function HomeScreen() {
           {mode === 'vehiculos' ? (
             <>
               {vehicles.map((vehicle) => (
-                  <View style={styles.autoDescription} key={vehicle.id}>
-                    <View style={styles.carInfo} >
-                      <View style={styles.carIcon}>
+                  <View style={stylesCars.autoDescription} key={vehicle.id}>
+                    <View style={stylesCars.carInfo} >
+                      <View style={stylesCars.carIcon}>
                         <Ionicons name='car-outline' size={40} color='#4CC978'/>
                       </View>
                       <View>
-                        <Text style={styles.carTitle}>Honda Civic</Text>
-                        <Text style={styles.carSubtitle}>2020 - Sedan</Text>
-                        <Text style={styles.tag}>Vehículo Principal</Text>
+                        <Text style={stylesCars.carTitle}>Honda Civic</Text>
+                        <Text style={stylesCars.carSubtitle}>2020 - Sedan</Text>
+                        <Text style={stylesCars.tag}>Vehículo Principal</Text>
                       </View>
                     </View>
-                    <View style={styles.carAction}>
+                    <View style={stylesCars.carAction}>
                       <View>
-                        <Text style={styles.lastWashText}>Ultimo Lavado: 15 Días atrás</Text>
-                        <Text style={styles.lastWashText}>¿Tiempo para un lavado?</Text>  
+                        <Text style={stylesCars.lastWashText}>Ultimo Lavado: 15 Días atrás</Text>
+                        <Text style={stylesCars.lastWashText}>¿Tiempo para un lavado?</Text>  
                       </View>
                       <TouchableOpacity style={styles.reserveButton} onPress={() => router.replace('/reservas')}>
                         <Text style={styles.reserveText}>Reservar</Text>
@@ -97,20 +99,20 @@ export default function HomeScreen() {
           ) : (
             <>
               {lavados.map((lavado) => (
-                <View style={styles.recomendadoCard} key={lavado.id}>
-                  <View style={styles.recomendadoTop}>
+                <View style={stylesLavados.recomendadoCard} key={lavado.id}>
+                  <View style={stylesLavados.recomendadoTop}>
                     <View style={{ flex: 1 }}>
-                      <Text style={styles.serviceTitle}>{lavado.name}</Text>
-                      <Text style={styles.serviceDescription}>
+                      <Text style={stylesLavados.serviceTitle}>{lavado.name}</Text>
+                      <Text style={stylesLavados.serviceDescription}>
                         {lavado.description}
                       </Text>
-                      <Text style={styles.durationText}>🕒 Duración: 45 min</Text>
+                      <Text style={stylesLavados.durationText}>🕒 Duración: 45 min</Text>
                     </View>
-                    <Text style={styles.priceText}>{lavado.price}</Text>
+                    <Text style={stylesLavados.priceText}>{lavado.price}</Text>
                   </View>
 
-                  <View style={styles.cardFooter}>
-                    <Text style={styles.availableTag}>Disponible Hoy</Text>
+                  <View style={stylesLavados.cardFooter}>
+                    <Text style={stylesLavados.availableTag}>Disponible Hoy</Text>
                     <TouchableOpacity style={styles.reserveButton} onPress={() => router.replace('/reservas')}>
                       <Text style={styles.reserveText}>Reservar</Text>
                     </TouchableOpacity>

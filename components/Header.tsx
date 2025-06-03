@@ -1,31 +1,35 @@
 import styles from "@/styles/stylesHeader";
+import { Ionicons } from "@expo/vector-icons";
 import React from "react";
-import {
-    Text,
-    View,
-} from "react-native";
-
+import { Image, Text, View } from "react-native";
 
 const Header = () => {
     return (
-        <View style={styles.header}>
-            <View style={styles.header}>
+        <View style={styles.headerContainer}>
             <View style={styles.headerLeft}>
-                <View style={styles.headerInfo}>
-                {/* <Image source={require('../../assets/images/logo-carwash.jpeg')} style={styles.logoPlaceholder}/> */}
-                <Text style={styles.headerText}>Car wash 8a</Text>
-                </View>
-                <Text style={{ color: 'white', fontSize: 12 }}>Av. Providencia 1208, Santiago, Chile</Text>
-            </View>
-            <View style={styles.puntosContainer}>
+                <View style={styles.logoAndName}>
+                <Image
+                    source={require("../assets/images/carwashLogo.png")}
+                    style={styles.logo}
+                />
                 <View>
-                {/* <AwardIcon width={24} height={24} /> */}
+                    <Text style={styles.businessName}>Car Wash 8a</Text>
                 </View>
-                <Text style={styles.puntosText}>15 PuntosSSS</Text>
+                </View>
+                    <View style={styles.locationRow}>
+                    <Ionicons name="location-outline" size={16} color="white" />
+                    <Text style={styles.addressText}>
+                        Av. Providencia 1208, Santiago, Chile
+                    </Text>
+                    </View>
             </View>
+
+            <View style={styles.pointsContainer}>
+                <Ionicons name="ribbon-outline" size={20} color="white" />
+                <Text style={styles.pointsText}>15 Pts</Text>
             </View>
         </View>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;

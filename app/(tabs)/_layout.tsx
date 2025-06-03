@@ -3,10 +3,10 @@ import React from 'react';
 import { Platform } from 'react-native';
 
 import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -22,6 +22,13 @@ export default function TabLayout() {
           ios: {
             // Use a transparent background on iOS to show the blur effect
             position: 'absolute',
+            backgroundColor: '#ECFDF3',
+            borderTopWidth: 0,
+            height: 70,
+            paddingBottom: 10,
+            paddingTop: 5,
+            elevation: 0,
+            shadowColor: 'transparent',
           },
           default: {},
         }),
@@ -30,35 +37,35 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons size={28} name="home-outline" color={color} />,
         }}
       />
       <Tabs.Screen
         name="reservas"
         options={{
           title: "Reservas",
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="calendar" color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons size={28} name="calendar-outline" color={color} />,
         }}
       />
       <Tabs.Screen
         name="perfil"
         options={{
           title: 'Perfil',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="person.fill" color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons size={28} name="person-outline" color={color} />,
         }}
       />
       <Tabs.Screen
         name="ayuda"
         options={{
           title: "Ayuda",
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="questionmark.circle" color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons size={28} name="help-circle-outline" color={color} />,
         }}
       />
       {/* <Tabs.Screen
         name="mas"
         options={{
           title: "Más",
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="line.horizontal.3" color={color} />,
+          tabBarIcon: ({ color }) => <Ionicons size={28} name="menu-outline" color={color} />,
         }}
       /> */}
     </Tabs>

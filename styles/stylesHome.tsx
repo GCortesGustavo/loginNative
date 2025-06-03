@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    paddingTop: 40,
+    paddingTop: 16,
     paddingHorizontal: 16,
   },
     logoPlaceholder: {
@@ -46,69 +46,6 @@ const styles = StyleSheet.create({
   activeSwitchText: {
     color: '#020817',
   },
-  autoDescription: {
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    borderWidth: 1,
-    borderColor: '#4CC978',
-    borderRadius: 12,
-    paddingTop: 12,
-    paddingBottom: 0,
-    marginBottom: 12,
-    backgroundColor: '#fff',
-    shadowColor: '#000',
-    shadowOpacity: 0.05,
-    shadowRadius: 6,
-    shadowOffset: { width: 0, height: 2 },
-    elevation: 2,
-  },
-  carInfo: {
-    flex: 1,
-    flexDirection: 'row'
-  },
-  carIcon: {
-    borderWidth: 1,
-    borderColor: '#4CC978',
-    borderRadius: 100,
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: 64,
-    marginLeft: 8,
-    marginRight: 8 
-  },
-  carTitle: {
-    fontWeight: 'bold',
-    fontSize: 15,
-    marginBottom: 2,
-  },
-  carSubtitle: {
-    fontSize: 13,
-    color: '#64748B',
-  },
-  tag: {
-    backgroundColor: '#D1FAE5',
-    color: '#059669',
-    fontSize: 12,
-    paddingHorizontal: 8,
-    paddingVertical: 2,
-    borderRadius: 12,
-    marginTop: 6,
-    alignSelf: 'flex-start',
-  },
-  carAction: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: '#D1F9E1',
-    marginTop: 8,
-    height: 60,
-  },
-  lastWashText: {
-    fontSize: 12,
-    color: '#4B5563',
-    marginBottom: 4,
-    marginLeft: 8,
-  },
   reserveButton: {
     backgroundColor: '#4CC978',
     marginBottom: 4,
@@ -148,61 +85,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     fontSize: 16,
-  },
-    recomendadoCard: {
-    width: '100%',
-    backgroundColor: '#fff',
-    borderWidth: 1,
-    borderColor: '#D1FADF',
-    borderRadius: 12,
-    padding: 16,
-    marginBottom: 16,
-    shadowColor: '#000',
-    shadowOpacity: 0.05,
-    shadowOffset: { width: 0, height: 1 },
-    shadowRadius: 4,
-    elevation: 2,
-  },
-  recomendadoTop: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginBottom: 12,
-  },
-  serviceTitle: {
-    fontSize: 16,
-    fontWeight: '700',
-    color: '#020817',
-  },
-  serviceDescription: {
-    fontSize: 14,
-    color: '#64748B',
-    marginTop: 4,
-  },
-  durationText: {
-    fontSize: 13,
-    color: '#94A3B8',
-    marginTop: 6,
-  },
-  priceText: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: '#16A34A',
-    alignSelf: 'flex-start',
-  },
-  cardFooter: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: '#D1F9E1'
-  },
-  availableTag: {
-    backgroundColor: '#D1FADF',
-    color: '#065F46',
-    fontWeight: '600',
-    paddingVertical: 4,
-    paddingHorizontal: 12,
-    borderRadius: 20,
-    fontSize: 13,
   },
 });
 
