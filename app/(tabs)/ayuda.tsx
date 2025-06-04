@@ -1,11 +1,11 @@
 // import Header from "@/components/Header";
+import InputChat from "@/components/inputChat";
 import styles from "@/styles/stylesAyuda";
 import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 import React from "react";
 import {
     ScrollView,
     Text,
-    TextInput,
     TouchableOpacity,
     View
 } from "react-native";
@@ -44,16 +44,7 @@ const AyudaScreen = () => {
                 </View>
             </ScrollView>
 
-            <View style={styles.inputArea}>
-                <TextInput 
-                    style={styles.input}
-                    placeholder="Escribe tu pregunta..."
-                    placeholderTextColor="#888"
-                />
-                <TouchableOpacity>
-                    <Ionicons name="send" size={24} color="#43b97f"/>
-                </TouchableOpacity>
-            </View>
+            <InputChat />
         </View>
     )
 }

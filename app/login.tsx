@@ -66,7 +66,7 @@ const LoginScreen = () => {
     return (
         <View style={styles.container}>
             <Image source={require('../assets/images/carwashLogo.png')} style={styles.logo}/>
-            <Text style={styles.title}>CarWasher 8a</Text>
+            <Text style={styles.title}>CarWash 8a</Text>
 
 
             <View style={styles.switchContainer}>

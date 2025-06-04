@@ -5,6 +5,7 @@ import ReservaStep3 from "@/components/ReservaStep3";
 import ReservaStep4 from "@/components/ReservaStep4";
 import React, { useState } from "react";
 import { View } from "react-native";
+import ReservaCheck from "../../components/reservaCheck";
 
 const ReservasScreen = () => {
     const [step, setStep] = useState(1)
@@ -18,7 +19,9 @@ const ReservasScreen = () => {
         case 3:
             return <ReservaStep3 onNext={() => setStep(4)} onBack={() => setStep(2)} />;
         case 4:
-            return <ReservaStep4 onBack={() => setStep(3)} />;
+            return <ReservaStep4 onBack={() => setStep(3)} onNext={() => setStep(5)}/>;
+        case 5:
+            return <ReservaCheck/>
         default:
             return null;
         }

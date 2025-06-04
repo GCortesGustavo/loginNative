@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     paddingTop: 16,
     paddingHorizontal: 16,
+    paddingBottom: 10
   },
     logoPlaceholder: {
     width: 40,

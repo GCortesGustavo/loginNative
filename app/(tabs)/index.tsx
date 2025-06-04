@@ -11,6 +11,7 @@ import {
   TouchableOpacity,
   View
 } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useAuthStore } from '../../store/auth';
 import styles from '../../styles/stylesHome';
 
@@ -29,6 +30,8 @@ export default function HomeScreen() {
   const logout = useAuthStore((state) => state.logout);
   const router = useRouter();
   const [ mode , setMode ] = useState<'vehiculos' | 'recomendados'>('vehiculos')
+  const insets = useSafeAreaInsets();
+
 
   const handleLogout = () => {
     logout();
@@ -38,7 +41,11 @@ export default function HomeScreen() {
   return (
     <>
       <Header />
-      <ScrollView>
+      <ScrollView 
+        contentContainerStyle={{
+          paddingBottom: insets.bottom + 50, 
+        }}
+      >
         <View style={styles.container}>
           {/* Header */}
 
