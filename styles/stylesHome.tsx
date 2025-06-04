@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     color: '#020817',
   },
   reserveButton: {
-    backgroundColor: '#4CC978',
+    backgroundColor: '#395B94',
     marginBottom: 4,
     marginRight: 8,
     borderRadius: 8,
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   addCarButton: {
-    borderColor: '#4CC978',
+    borderColor: '#395B94',
     borderWidth: 1,
     padding: 12,
     borderRadius: 12,
@@ -73,11 +73,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   addCarText: {
-    color: '#4CC978',
+    color: '#395B94',
     fontWeight: 'bold',
   },
   reserveNowButton: {
-    backgroundColor: '#4CC978',
+    backgroundColor: '#395B94',
     padding: 14,
     borderRadius: 12,
     alignItems: 'center',

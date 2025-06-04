@@ -8,7 +8,7 @@ const ProximaReserva = () => {
         <View style={styles.proximaReserva}>
             <Text style={styles.proximaReservaTitle}>Próxima Reserva</Text>
             <View style={{ marginTop: 8, display: 'flex', flexDirection: 'row'}}>
-                <Ionicons name="calendar-clear-outline" size={32} color='#059669'/>
+                <Ionicons name="calendar-clear-outline" size={32} color='#395B94'/>
                 <View style={{marginLeft: 8}}>
                     <Text  style={styles.proximaReservaText}>Viernes 21 de Mayo, 2025</Text>
                     <Text  style={styles.proximaReservaText}>15:00hs - 16:30hs - Lavado Completo</Text>

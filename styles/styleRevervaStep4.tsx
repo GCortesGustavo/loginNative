@@ -24,7 +24,7 @@ export default StyleSheet.create({
         alignItems: "center",
     },
     activeTab: {
-        backgroundColor: "#4CC978",
+        backgroundColor: "#406FB5",
     },
     tabText: {
         color: "#555",
@@ -43,8 +43,8 @@ export default StyleSheet.create({
         borderColor: "#DDD",
     },
     selectedCard: {
-        borderColor: "#4CC978",
-        backgroundColor: "#E9F8EF",
+        borderColor: "#406FB5",
+        backgroundColor: "#E2EEF7",
     },
     nombre: {
         fontSize: 16,
@@ -59,23 +59,23 @@ export default StyleSheet.create({
     seleccionado: {
         marginTop: 8,
         fontSize: 12,
-        color: "#4CC978",
+        color: "#406FB5",
         fontWeight: "bold",
     },
     total: {
         marginTop: 20,
         padding: 16,
-        backgroundColor: "#DFF6E4",
+        backgroundColor: "#A7CFE9",
         borderRadius: 8,
     },
     totalText: {
         fontSize: 16,
         fontWeight: "bold",
-        color: "#2C7A4B",
+        color: "#395B94",
     },
     boton: {
         marginTop: 20,
-        backgroundColor: "#4CC978",
+        backgroundColor: "#406FB5",
         padding: 16,
         borderRadius: 10,
         alignItems: "center",
@@ -90,11 +90,11 @@ export default StyleSheet.create({
         padding: 12,
         borderRadius: 10,
         alignItems: "center",
-        borderColor: "#4CC978",
+        borderColor: "#406FB5",
         borderWidth: 1,
     },
     continueText: {
-        color: "#4CC978",
+        color: "#406FB5",
         fontSize: 15,
         fontWeight: "500",
     },

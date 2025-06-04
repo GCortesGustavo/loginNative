@@ -16,7 +16,9 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         marginBottom: 8,
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
+        borderWidth: 1,
+        borderColor: '#406FB5'
     },
     cardSmall: {
         backgroundColor: "#F5F5F5",
@@ -29,8 +31,8 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     selectedCard: {
-        backgroundColor: "#D1FADF",
-        borderColor: "#32B768",
+        backgroundColor: "#E2EEF7",
+        borderColor: "#406FB5",
         borderWidth: 1,
     },
     cardPerson: {
@@ -49,13 +51,13 @@ const styles = StyleSheet.create({
     },
     addButton: {
         borderWidth: 1,
-        borderColor: "#32B768",
+        borderColor: "#406FB5",
         borderRadius: 10,
         padding: 10,
         alignItems: "center",
     },
     addButtonText: {
-        color: "#32B768",
+        color: "#406FB5",
     },
     summary: {
         backgroundColor: "#F0F0F0",
@@ -67,7 +69,7 @@ const styles = StyleSheet.create({
         marginBottom: 4,
     },
     continueButton: {
-        backgroundColor: "#32B768",
+        backgroundColor: "#395B94",
         padding: 14,
         borderRadius: 10,
         alignItems: "center",
@@ -76,6 +78,31 @@ const styles = StyleSheet.create({
     continueText: {
         color: "#fff",
         fontWeight: "600",
+    },
+
+    // STEP2
+    cardIcon: {
+        marginRight: 12,
+        marginTop: 4,
+    },
+    cardTitle: {
+        fontSize: 16,
+        fontWeight: "600",
+        marginBottom: 4,
+    },
+    cardSubtitle: {
+        fontSize: 14,
+        color: "#666",
+        marginBottom: 4,
+    },
+    defaultBadge: {
+        backgroundColor: "#CBE1F2",
+        color: "#406FB5",
+        fontSize: 12,
+        paddingHorizontal: 8,
+        paddingVertical: 2,
+        borderRadius: 12,
+        alignSelf: "flex-start",
     },
     /* ReservaStep3 */
     title: {
@@ -93,12 +120,12 @@ const styles = StyleSheet.create({
     },
     precio: {
         fontWeight: 'bold',
-        color: '#4CAF50',
+        color: '#406FB5',
     },
     seleccionado: {
         marginTop: 8,
         fontSize: 12,
-        color: '#4CAF50',
+        color: '#406FB5',
         fontWeight: 'bold',
     },
     resumen: {
@@ -110,6 +137,7 @@ const styles = StyleSheet.create({
     resumenTitle: {
         fontWeight: 'bold',
         marginBottom: 4,
+        color: '#406FB5'
     },
     boton: {
         marginTop: 24,

@@ -105,15 +105,15 @@ const ReservaCheck = () => {
                 <View style={styles.ayudaBox}>
                         <Text style={styles.faqText}>Preguntas Frecuentes:</Text>
                         <View style={styles.faqItem}>
-                        <Ionicons name="help-circle-outline" size={20} />
+                        <Ionicons name="help-circle-outline" size={20} color={'#395B94'}/>
                         <Text style={styles.faqQuestion}>¿Cómo funciona el sistema de puntos?</Text>
                         </View>
                         <View style={styles.faqItem}>
-                        <Ionicons name="card-outline" size={20} />
+                        <Ionicons name="card-outline" size={20} color={'#395B94'}/>
                         <Text style={styles.faqQuestion}>¿Qué métodos de pago aceptan?</Text>
                         </View>
                         <View style={styles.faqItem}>
-                        <Ionicons name="car-outline" size={20} />
+                        <Ionicons name="car-outline" size={20} color={'#395B94'}/>
                         <Text style={styles.faqQuestion}>¿Cómo agrego un vehículo?</Text>
                         </View>
                 </View>

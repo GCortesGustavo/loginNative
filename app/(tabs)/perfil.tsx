@@ -21,7 +21,7 @@ const PerfilScreen = () => {
         {/* CARD PERFIL */}
         <View style={styles.profileCard}>
           <View style={styles.row}>
-            <Ionicons name="person-circle-outline" size={50} color="#3cb371" />
+            <Ionicons name="person-circle-outline" size={50} color="#406FB5" />
             <View style={{ marginLeft: 10 }}>
               <Text style={styles.name}>Juan Pérez</Text>
               <Text style={styles.email}>juan.perez@ejemplo.com</Text>
@@ -31,7 +31,7 @@ const PerfilScreen = () => {
 
           <View style={styles.statsRow}>
             <View style={styles.statTrophy}>
-              <Ionicons name="trophy-outline" size={24} color={'#3cb371'}/>
+              <Ionicons name="trophy-outline" size={24} color={'#406FB5'}/>
               <View>
                 <Text style={styles.statValue}>15</Text>
                 <Text style={styles.statLabel}>Puntos</Text>
@@ -103,7 +103,7 @@ const PerfilScreen = () => {
           <>
             <View style={styles.vehiculosContainer}>
               <View style={styles.card}>
-                  <Ionicons name="car-outline" size={40} color={'#3cb371'}/>
+                  <Ionicons name="car-outline" size={40} color={'#406FB5'}/>
                     <View style={styles.info}>
                       <Text style={styles.name1}>Honda Civic</Text>
                       <Text style={styles.subInfo}>
@@ -118,7 +118,7 @@ const PerfilScreen = () => {
                     </TouchableOpacity>
               </View>
               <View style={styles.card}>
-                  <Ionicons name="car-outline" size={40} color={'#3cb371'}/>
+                  <Ionicons name="car-outline" size={40} color={'#406FB5'}/>
                     <View style={styles.info}>
                       <Text style={styles.name1}>TOYOTA RAV4</Text>
                       <Text style={styles.subInfo}>

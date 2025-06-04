@@ -1,7 +1,8 @@
 // import Header from "@/components/Header";
+import Header from "@/components/Header";
 import InputChat from "@/components/inputChat";
 import styles from "@/styles/stylesAyuda";
-import { Ionicons, MaterialIcons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 import React from "react";
 import {
     ScrollView,
@@ -20,10 +21,11 @@ const preguntasFrecuentes = [
 const AyudaScreen = () => {
     return (
         <View style={styles.container}>
-            <View style={styles.header}>
+            {/* <View style={styles.header}>
                 <MaterialIcons name='support-agent' style={{marginTop: 20}} size={24} color='white'/>
                 <Text style={styles.headerTitle}>Asistente Virtual</Text>
-            </View>
+            </View> */}
+            <Header />
 
             <ScrollView style={styles.chatArea} contentContainerStyle={{ padding: 16 }}>
                 <View style={styles.botMessage}>
@@ -38,7 +40,7 @@ const AyudaScreen = () => {
                     {preguntasFrecuentes.map((pregunta, i) => (
                         <TouchableOpacity key={i} style={styles.faqButton}>
                             <Text style={styles.faqButtonText}>{pregunta}</Text>
-                            <Ionicons name="arrow-forward-circle" size={16} color="#43B97F"/>
+                            <Ionicons name="arrow-forward-circle" size={16} color="#406FB5"/>
                         </TouchableOpacity>
                     ))}
                 </View>

@@ -5,7 +5,7 @@ const stylesCars = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'space-between',
         borderWidth: 1,
-        borderColor: '#4CC978',
+        borderColor: '#395B94',
         borderRadius: 12,
         paddingTop: 12,
         paddingBottom: 0,
@@ -23,7 +23,7 @@ const stylesCars = StyleSheet.create({
     },
     carIcon: {
         borderWidth: 1,
-        borderColor: '#4CC978',
+        borderColor: '#395B94',
         borderRadius: 100,
         alignItems: 'center',
         justifyContent: 'center',
@@ -41,8 +41,8 @@ const stylesCars = StyleSheet.create({
         color: '#64748B',
     },
     tag: {
-        backgroundColor: '#D1FAE5',
-        color: '#059669',
+        backgroundColor: '#CBE1F2',
+        color: '#324D76',
         fontSize: 12,
         paddingHorizontal: 8,
         paddingVertical: 2,
@@ -54,7 +54,7 @@ const stylesCars = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#D1F9E1',
+        backgroundColor: '#CBE1F2',
         marginTop: 8,
         height: 60,
         borderRadius: 12

@@ -4,7 +4,7 @@ const styles = StyleSheet.create ({
   headerReserva: {
     paddingVertical: 10,
     paddingHorizontal: 16,
-    backgroundColor: "#E5F8EC",
+    backgroundColor: "#CBE1F2",
     alignItems: "center",
     borderBottomWidth: 1,
     borderBottomColor: "#D4E7D9",
@@ -12,7 +12,7 @@ const styles = StyleSheet.create ({
   reservaTitle: {
     fontSize: 18,
     fontWeight: "600",
-    color: "#00A86B",
+    color: "#406FB5",
   },
 
   tabContainer: {
@@ -27,7 +27,7 @@ const styles = StyleSheet.create ({
     borderRadius: 20,
   },
   tabButtonActive: {
-    backgroundColor: "#00A86B",
+    backgroundColor: "#395B94",
   },
   tabText: {
     color: "#333",
@@ -43,10 +43,10 @@ const styles = StyleSheet.create ({
 
   // Detalles
   confirmLabel: {
-    backgroundColor: "#D1FADF",
+    backgroundColor: "#CBE1F2",
     padding: 6,
     borderRadius: 8,
-    color: "#027A48",
+    color: "#395B94",
     fontWeight: "600",
     alignSelf: "flex-start",
     marginBottom: 10,
@@ -77,18 +77,18 @@ const styles = StyleSheet.create ({
   totalText: {
     fontWeight: "bold",
     marginTop: 6,
-    color: "#00A86B",
+    color: "#395B94",
   },
   pointsBox: {
     marginTop: 16,
-    backgroundColor: "#E5F8EC",
+    backgroundColor: "#CBE1F2",
     borderRadius: 10,
     padding: 12,
     alignItems: "center",
   },
   pointsText: {
     fontWeight: "bold",
-    color: "#00A86B",
+    color: "#395B94",
     fontSize: 16,
   },
   subPointsText: {
@@ -123,7 +123,7 @@ const styles = StyleSheet.create ({
   },
   chatMessageRight: {
     alignSelf: "flex-end",
-    backgroundColor: "#D1FADF",
+    backgroundColor: "#CBE1F2",
     padding: 10,
     borderRadius: 10,
     maxWidth: "75%",
@@ -131,7 +131,7 @@ const styles = StyleSheet.create ({
   chatSender: {
     fontWeight: "bold",
     marginBottom: 4,
-    color: "#027A48",
+    color: "#395B94",
   },
   chatBubbleUser: {
     color: "#000",
@@ -146,6 +146,7 @@ const styles = StyleSheet.create ({
     fontSize: 16,
     fontWeight: "600",
     marginBottom: 8,
+    color: '#395B94'
   },
   faqItem: {
     flexDirection: "row",

@@ -11,7 +11,7 @@ const InputChat = () => {
                 placeholderTextColor="#888"
             />
             <TouchableOpacity>
-                <Ionicons name="send" size={24} color="#43b97f"/>
+                <Ionicons name="send" size={24} color="#406FB5"/>
             </TouchableOpacity>
         </View>
     )

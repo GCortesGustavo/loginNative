@@ -83,7 +83,7 @@ export default function HomeScreen() {
                   <View style={stylesCars.autoDescription} key={vehicle.id}>
                     <View style={stylesCars.carInfo} >
                       <View style={stylesCars.carIcon}>
-                        <Ionicons name='car-outline' size={40} color='#4CC978'/>
+                        <Ionicons name='car-outline' size={40} color='#395B94'/>
                       </View>
                       <View>
                         <Text style={stylesCars.carTitle}>Honda Civic</Text>
@@ -131,7 +131,7 @@ export default function HomeScreen() {
 
           {/* Botones inferiores */}
           <TouchableOpacity style={styles.addCarButton}>
-            <Ionicons name='car-outline' size={24} color='#4CC978'/>
+            <Ionicons name='car-outline' size={24} color='#395B94'/>
             <Text style={styles.addCarText}>Agregar Vehículo</Text>
           </TouchableOpacity>
 

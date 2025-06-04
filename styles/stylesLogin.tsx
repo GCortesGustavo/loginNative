@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 24,
         fontWeight: 'bold',
-        color: '#4CC978',
+        color: '#395B94',
         marginBottom: 24,
     },
     card: {
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
     },
     button: {
-        backgroundColor: '#4CC978',
+        backgroundColor: '#406FB5',
         borderRadius: 8,
         paddingVertical: 12,
         alignItems: 'center',
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     forgotPassword: {
         marginTop: 16,
         textAlign: 'center',
-        color: '#4CC978',
+        color: '#324D76',
         textDecorationLine: 'underline',
     },
     switchContainer: {
